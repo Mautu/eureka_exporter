@@ -65,7 +65,7 @@ func NewMetrics(c *conf.Config) *Metrics {
 	return &Metrics{
 		conf: c,
 		metrics: map[string]*prometheus.Desc{
-			"registry_service_status": newGlobalMetric("registry_service_status", "check eureka service registry status", []string{"registry_center", "address", "application", "port", "portenable", "SecurePort", "SecurePortenable"}),
+			"registry_service_status": newGlobalMetric("registry_service_status", "check eureka service registry status", []string{"registry_center", "address", "application", "port", "portenable", "secureport", "secureportenable"}),
 		},
 	}
 }

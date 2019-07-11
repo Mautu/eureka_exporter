@@ -43,7 +43,7 @@ func main() {
 	http.Handle("/metrics", promhttp.HandlerFor(registry, promhttp.HandlerOpts{}))
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(`<html>
-	        <head><title>check_exporter</title></head>
+	        <head><title>eureka_exporter</title></head>
 	        <body>
 	        <h1>check_exporter</h1>
 			<p>version: ` + config.Version + `</a></p>
