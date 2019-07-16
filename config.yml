@@ -1,0 +1,3 @@
+url: http://127.0.0.1:8299/eureka/apps
+version: 0.0.1
+port: 49110 
